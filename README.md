@@ -19,7 +19,7 @@ A block diagram for the proposed Harvard architecture, with minimal functional b
 ![Figure-1](Nano119_architecture.png)
 
 ### Architectural overview
-The proposed CPU uses a Harvard architecture in which program, data and IO are accessed from separate busses. The data word size is 16 bits while the code Word size is 8 bits. The 16-bit ALU is a general-purpose arithmetic and logic unit and its result is always stored in the 32-bit R register. 
+The proposed CPU uses a Harvard architecture in which program, data and IO are accessed from separate busses. The data word size is 16 bits while the code word size is 8 bits. The 16-bit ALU is a general-purpose arithmetic and logic unit and its result is always stored in the 32-bit R register. 
 The arithmetic instructions affect the values of the following flags:
 -	Z16: 16 bits Zero / Equal
 -	N16: 16 bits negative / Less tan
