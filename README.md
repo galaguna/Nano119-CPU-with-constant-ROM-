@@ -88,7 +88,7 @@ The proposed instruction set is can be conveniently codified with bytes. The fol
 
 In practice, to work with the input and output ports of a Basys3 board, the entire system has been packaged in the Nano_mcsys_119 module, which is represented schematically below:
 
-![Figure-15](Nano_mcsys_119 module.png)
+![Figure-15](Nano_mcsys_119_module.png)
 
 Within the Nano_mcsys_119 module, the parameter CPU_CLK_SEL is used to select, by means a multiplexor, the CPU clock signal that will be used to drive the machine cycles (fetch-decode-execute). Assuming a 100 MHz system clock, the possible CPU frequencies are showed in the following table:
 
