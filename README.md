@@ -48,7 +48,7 @@ Additionally, the architecture includes the following internal registers that ar
 -	Instruction, H and L registers: 8-bit registers, used at instruction decode process to store op code and parameters values
 
 ### Program memory organization
-The CPU has 12-bit instruction pointer capable of addressing a 4k x 8 program. The reset vector is at 0x0000, while the interrupt vectors are at 0x3FF7, 0x3FFA and 0x3FFD, for Int2, Int1 and Int0, respectively.
+The CPU has 12-bit instruction pointer capable of addressing a 4k x 8 program. The reset vector is at 0x0000, while the interrupt vectors are at 0xFF7, 0xFFA and 0xFFD, for Int2, Int1 and Int0, respectively.
 
 ![Figure-2](Program_memory_map.png)
 
@@ -103,3 +103,10 @@ The ROM is implemented with a constant array (CODE_ROM) that includes the follow
 Of course, the user can customize the ROM code, to include an own program, in the Nano_mcsys_119.vhd file. 
 The project uses the I/O resources of a Basys3 board. To see the I/O connections for the Nano_mcsys_119 module, go to Top_Basys3.vhd file. 
 Once synthetized and downloaded the bitstream on destination FPGA, the code execution starts with signal RUN=1.  
+
+## HOW TO CITE
+
+If you mention this project in a publication, I ask that you include the following citation for it:
+
+* Laguna-Sanchez, G.A. (2025). Nano119 CPU with constant ROM.  
+  https://github.com/galaguna/Nano119-CPU-with-constant-ROM-.
